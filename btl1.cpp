@@ -5,7 +5,7 @@
 #include <algorithm>
 #include <vector>
 using namespace std;
-const int MAX_STUDENTS = 100;  // Gioi han so luong sinh vien
+const int MAX_STUDENTS = 200;  // Gioi han so luong sinh vien
 struct Student {
     string id;
     string name;
