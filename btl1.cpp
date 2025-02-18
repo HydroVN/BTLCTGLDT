@@ -113,17 +113,17 @@ void searchStudentById(Student students[], int n, const string& id) {
     bool found = false;
     for (int i = 0; i < n; i++) {
         if (students[i].id == id) {
-            cout << "Student found:" << endl;
+            cout << "Tim thay sinh vien:" << endl;
             cout << "ID: " << students[i].id
-                 << ", Name: " << students[i].name
-                 << ", Birth Year: " << students[i].birthYear
-                 << ", Average Score: " << students[i].averageScore << endl;
+                 << ", Ten: " << students[i].name
+                 << ", Nam sinh: " << students[i].birthYear
+                 << ", Diem trung binh: " << students[i].averageScore << endl;
             found = true;
             break;
         }
     }
     if (!found) {
-        cout << "Student with ID " << id << " not found!" << endl;
+        cout << "Sinh vien voi ma " << id << " khong co trong danh sach!" << endl;
     }
 }
 // Ham tim kiem sinh vien theo ten (co the trung khop mot phan)
@@ -132,16 +132,16 @@ void searchStudentByName(Student students[], int n, const string& name) {
     for (int i = 0; i < n; i++) {
         // Kiem tra neu ten nhap vao la mot phan cua ten sinh vien
         if (students[i].name.find(name) != string::npos) {
-            cout << "Student found:" << endl;
+            cout << "Tim thay sinh vien:" << endl;
             cout << "ID: " << students[i].id
-                 << ", Name: " << students[i].name
-                 << ", Birth Year: " << students[i].birthYear
-                 << ", Average Score: " << students[i].averageScore << endl;
+                 << ", Ten: " << students[i].name
+                 << ", Nam sinh: " << students[i].birthYear
+                 << ", Diem trung binh: " << students[i].averageScore << endl;
             found = true;
         }
     }
     if (!found) {
-        cout << "No student found with name containing: " << name << endl;
+        cout << "Khong co sinh vien nao chua ten: " << name << endl;
     }
 }
 int main() {
